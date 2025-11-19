@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #004F71;
+  --color-primary-light: #004E70;
+  --color-accent: #FFCB03;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

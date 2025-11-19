@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import ClinicPesaLayout from './pages/ClinicPesaLayout'
+import React from 'react'
+import ClinicPesaPage from './pages/ClinicPesaPage'
 
 function App() {
 
   return (
-    <div className="App max-w-sm mx-auto shadow-xl min-h-screen">
-      <ClinicPesaLayout />
+    <div className="App max-w-sx sm:max-w-sm mx-auto shadow-xl min-h-screen">
+      <ClinicPesaPage />
     </div>
   )
 }
