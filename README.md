@@ -1,73 +1,32 @@
-# React + TypeScript + Vite
+# ClinicPesa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies
 
-Currently, two official plugins are available:
+This project is built with the following technologies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Framework
+- **React** ^19.2.0 - A JavaScript library for building user interfaces
+- **React DOM** ^19.2.0 - React renderer for web browsers
 
-## React Compiler
+### Build Tools
+- **Vite** ^7.2.2 - Next generation frontend tooling
+- **@vitejs/plugin-react** ^5.1.0 - Official React plugin for Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Styling
+- **Tailwind CSS** ^4.1.17 - Utility-first CSS framework
+- **PostCSS** ^8.5.6 - CSS post-processor
+- **Autoprefixer** ^10.4.22 - PostCSS plugin to parse CSS and add vendor prefixes
 
-## Expanding the ESLint configuration
+### Language & Type Safety
+- **TypeScript** ~5.9.3 - Typed superset of JavaScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Code Quality
+- **ESLint** ^9.39.1 - JavaScript and TypeScript linter
+- **TypeScript ESLint** ^8.46.3 - TypeScript-specific ESLint rules
+- **ESLint Plugin React Hooks** ^7.0.1 - React Hooks linting rules
+- **ESLint Plugin React Refresh** ^0.4.24 - React Fast Refresh linting rules
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Development Dependencies
+- **@types/node** ^24.10.0 - TypeScript definitions for Node.js
+- **@types/react** ^19.2.2 - TypeScript definitions for React
+- **@types/react-dom** ^19.2.2 - TypeScript definitions for React DOM
