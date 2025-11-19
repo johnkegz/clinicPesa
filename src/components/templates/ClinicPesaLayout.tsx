@@ -4,6 +4,7 @@ import BalanceSection, { type BalanceCardData } from '../organisms/BalanceSectio
 import type { TabType } from '../organisms/NavigationTabs/NavigationTabs';
 import NavigationTabs from '../organisms/NavigationTabs/NavigationTabs';
 import AccountOptionsGrid from '../organisms/AccountOptionsGrid/AccountOptionsGrid';
+import Footer from '../organisms/Footer/Footer';
 
 interface ClinicPesaLayoutProps {
   userName: string;
@@ -22,6 +23,7 @@ const ClinicPesaLayout: React.FC<ClinicPesaLayoutProps> = ({
   balanceCards,
   activeTab,
   onTabChange,
+  onTermsClick
 }) => {
   const accountOptions = [
     {
@@ -45,7 +47,7 @@ const ClinicPesaLayout: React.FC<ClinicPesaLayoutProps> = ({
       onClick: () => console.log('My Approvals clicked'),
     },
   ];
-  
+
   return (
     <div className="min-h-screen flex flex-col bg-background-paper">
       <Header userName={userName} onBack={onBack} onClose={onClose} />
@@ -56,6 +58,7 @@ const ClinicPesaLayout: React.FC<ClinicPesaLayoutProps> = ({
           <AccountOptionsGrid options={accountOptions} />
         )}
       </div>
+      <Footer onTermsClick={onTermsClick} />
     </div>
   );
 };
