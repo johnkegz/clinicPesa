@@ -5,6 +5,7 @@ interface AccountOption {
   icon: 'document-dollar' | 'hand-dollar' | 'users' | 'check-circle';
   label: string;
   onClick?: () => void;
+  strokeWidth: number
 }
 
 interface AccountOptionsGridProps {
@@ -20,6 +21,7 @@ const AccountOptionsGrid: React.FC<AccountOptionsGridProps> = ({ options }) => {
           icon={option.icon}
           label={option.label}
           onClick={option.onClick}
+          strokeWidth={option.strokeWidth}
         />
       ))}
     </div>

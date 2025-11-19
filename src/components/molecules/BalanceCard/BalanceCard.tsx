@@ -40,7 +40,8 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
             <Icon
               name={isBalanceVisible ? 'eye-off' : 'eye'}
               stroke={'#004F71'}
-              strokeWidth={30}
+              strokeWidth={isBalanceVisible ? 0 : 20}
+              size={isBalanceVisible ? 30 : 24}
             />
           </button>
         </div>
