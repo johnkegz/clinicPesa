@@ -29,25 +29,33 @@ const ClinicPesaLayout: React.FC<ClinicPesaLayoutProps> = ({
     {
       icon: 'document-dollar' as const,
       label: 'Pay Medical Bill',
-      onClick: () => console.log('Pay Medical Bill clicked'),
+      onClick: () => {
+        // TODO: Implement Pay Medical Bill action
+      },
       strokeWidth: 1.4,
     },
     {
       icon: 'hand-dollar' as const,
       label: 'Get Loan',
-      onClick: () => console.log('Get Loan clicked'),
+      onClick: () => {
+        // TODO: Implement Get Loan action
+      },
       strokeWidth: 15,
     },
     {
       icon: 'users' as const,
       label: 'Join MaMas',
-      onClick: () => console.log('Join MaMas clicked'),
+      onClick: () => {
+        // TODO: Implement Join MaMas action
+      },
       strokeWidth: 20,
     },
     {
       icon: 'check-circle' as const,
       label: 'My Approvals',
-      onClick: () => console.log('My Approvals clicked'),
+      onClick: () => {
+        // TODO: Implement My Approvals action
+      },
       strokeWidth: 20,
     },
   ];

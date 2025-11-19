@@ -144,8 +144,6 @@ const Icon: React.FC<IconProps> = ({
     viewBox = '-2.4 -2.4 28.80 28.80';
   }
 
-  // strokeWidth = name === 'document-dollar' ? 3: 1.4;
-  
   if (name === 'document-dollar') {
     fill = stroke;
   } else if (name === 'hand-dollar') {

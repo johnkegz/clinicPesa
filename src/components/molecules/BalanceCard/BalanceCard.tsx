@@ -22,7 +22,7 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
   const [isBalanceVisible, setIsBalanceVisible] = useState(true);
 
   return (
-    <div className="bg-white rounded-xl shadow-md px-5 py-3 flex-shrink-0 w-80 max-w-sm relative z-20">
+    <div className="bg-white rounded-xl shadow-md px-5 py-3 shrink-0 w-80 max-w-sm relative z-20">
       {tag && <Tag variant={tag.variant}>{tag.name}</Tag>}
 
       <div className="mb-2">

@@ -11,11 +11,15 @@ const ClinicPesaPage: React.FC = () => {
   };
 
   const handleBack = () => {
-    console.log('Back clicked');
+    // TODO: Implement back navigation
   };
 
   const handleClose = () => {
-    console.log('Close clicked');
+    // TODO: Implement close action
+  };
+
+  const handleTermsClick = () => {
+    // TODO: Implement terms and conditions navigation
   };
 
   const balanceCards: BalanceCardData[] = [
@@ -54,6 +58,7 @@ const ClinicPesaPage: React.FC = () => {
       userName="Robert"
       onBack={handleBack}
       onClose={handleClose}
+      onTermsClick={handleTermsClick}
       balanceCards={balanceCards}
       activeTab={activeTab}
       onTabChange={handleTabChange}
