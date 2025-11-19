@@ -4,10 +4,15 @@
   --color-primary: #004F71;
   --color-primary-light: #004E70;
   --color-accent: #FFCB03;
+  --color-background-paper: #F2F2F2;
+  --color-background-gray: #CCDCE3;
+  --color-background-green-light: #0DAF4B;
+  --font-family-sans: 'Open Sans', system-ui, sans-serif;
 }
 
 body {
   margin: 0;
+  font-family: var(--font-family-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
