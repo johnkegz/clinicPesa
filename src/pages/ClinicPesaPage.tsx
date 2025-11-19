@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ClinicPesaLayout from '../components/templates/ClinicPesaLayout';
 import type { BalanceCardData } from '../components/organisms/BalanceSection/BalanceSection';
+import type { TabType } from '../components/organisms/NavigationTabs/NavigationTabs';
 
 const ClinicPesaPage: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<TabType>('ACCOUNT OPTIONS');
+
+  const handleTabChange = (tab: TabType) => {
+    setActiveTab(tab);
+  };
+
   const handleBack = () => {
     console.log('Back clicked');
   };
@@ -48,6 +55,8 @@ const ClinicPesaPage: React.FC = () => {
       onBack={handleBack}
       onClose={handleClose}
       balanceCards={balanceCards}
+      activeTab={activeTab}
+      onTabChange={handleTabChange}
     />
   );
 };

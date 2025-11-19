@@ -40,6 +40,7 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
             <Icon
               name={isBalanceVisible ? 'eye-off' : 'eye'}
               stroke={'#004F71'}
+              strokeWidth={30}
             />
           </button>
         </div>
@@ -60,14 +61,14 @@ const BalanceCard: React.FC<BalanceCardProps> = ({
 
       <div className="flex border-t border-gray-200 pt-2">
         <button className="flex-1 flex flex-col items-center pr-2">
-          <Icon name="wallet" size={18} className="text-primary" />
+          <Icon name="wallet" size={18} className="text-primary" strokeWidth={30} />
           <Text size="sm" weight="bold" color="primary">
             Deposit
           </Text>
         </button>
          <div className="h-8 bg-accent w-[1.4px]"></div>
         <button className="flex-1 flex flex-col items-center pl-2">
-          <Icon name="paper-plane" size={18} className="text-primary" />
+          <Icon name="paper-plane" size={18} className="text-primary" strokeWidth={30} />
           <Text size="sm" weight="bold" color="primary">
             Share Medical
           </Text>
